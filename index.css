@@ -1,0 +1,9 @@
+* {
+    background-color: rgb(0, 10, 150);
+    color: #a3a3a3;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    text-align: center;
+}
