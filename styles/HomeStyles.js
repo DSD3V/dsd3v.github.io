@@ -28,7 +28,7 @@ export const HomeDiv = styled.div`
   max-width: 80%;
 
   @media (max-width: ${MOBILE_WIDTH}) {
-    margin-top: 13vh;
+    margin-top: 15vh;
   }
 `
 
