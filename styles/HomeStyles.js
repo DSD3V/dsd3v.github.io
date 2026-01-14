@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { COLORS } from '../constants'
+import { COLORS, MOBILE_WIDTH } from '../constants'
 
 export const H1 = styled.h1`
   color: ${COLORS.WHITE};
   font-size: 4rem;
   font-weight: 500;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    font-size: 3rem;
+  }
 `
 
 export const H2 = styled.h2`
@@ -13,11 +17,19 @@ export const H2 = styled.h2`
   font-size: 1.5rem;
   font-weight: 300;
   margin-top: 60px;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    font-size: 1.2rem;
+  }
 `
 
 export const HomeDiv = styled.div`
   margin: 17vh auto 2vh auto;
   max-width: 80%;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    margin-top: 13vh;
+  }
 `
 
 export const HomeNavigationDiv = styled.div`
@@ -27,6 +39,10 @@ export const HomeNavigationDiv = styled.div`
   margin: 8vh auto 0 auto;
   max-width: 1000px;
   width: 95%;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    margin-top: 6vh;
+  }
 `
 
 export const StyledLink = styled(Link)`

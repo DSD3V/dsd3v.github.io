@@ -8,3 +8,4 @@ export const COLORS = {
 }
 
 export const NAVBAR_TOGGLE_WIDTH = '1200px'
+export const MOBILE_WIDTH = '525px'

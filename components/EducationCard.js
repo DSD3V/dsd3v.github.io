@@ -9,10 +9,10 @@ export const EducationCard = ({
     }
 }) => (
     <CardContainer>
-        <CardTitle>{collegeName}</CardTitle>
+        <CardTitle>{degree}</CardTitle>
         <HR />
         <CardDiv>
-            <CardLabel>{degree}</CardLabel>
+            <CardLabel>{collegeName}</CardLabel>
         </CardDiv>
         <HR />
         <CardDiv>

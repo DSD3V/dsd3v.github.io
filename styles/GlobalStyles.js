@@ -63,7 +63,7 @@ export const CardTitle = styled.span`
   color: ${COLORS.LIGHT_GREY};
   font-size: 1.4rem;
   overflow: hidden;
-  padding: 3% 4.5% 2% 4.5%;
+  padding: 5% 4.5% 2% 4.5%;
 `
 
 export const Divider = styled.span`

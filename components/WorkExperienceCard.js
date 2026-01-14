@@ -8,10 +8,10 @@ export const WorkExperienceCard = ({
     }
 }) => (
     <CardContainer>
-        <CardTitle>{companyName}</CardTitle>
+        <CardTitle>{role}</CardTitle>
         <HR />
         <CardDiv>
-            <CardLabel>{role}</CardLabel>
+            <CardLabel>{companyName}</CardLabel>
         </CardDiv>
         <HR />
         <CardDiv>
