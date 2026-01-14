@@ -81,23 +81,23 @@ export const HR = styled.hr`
 
 export const Link = styled.a`
   align-items: center;
-  color: ${COLORS.LINK_BLUE};
+  color: rgba(${COLORS.LINK_BLUE_RGB}, 0.7);
   cursor: pointer;
   line-height: 1.6rem;
   text-decoration: none;
   transition: 0.3s;
 
   svg {
-    fill: ${COLORS.LINK_BLUE};
+    fill: rgb(${COLORS.LINK_BLUE_RGB}, 0.7);
     padding-left: 3px;
     transition: 0.3s;
   }
 
   :hover {
-    color: ${COLORS.LIGHT_LINK_BLUE};
+    color: rgb(${COLORS.LIGHT_LINK_BLUE_RGB}, 0.7);
 
     svg {
-      fill: ${COLORS.LIGHT_LINK_BLUE};
+      fill: rgb(${COLORS.LIGHT_LINK_BLUE_RGB}, 0.7);
     }
   }
 `
