@@ -4,8 +4,7 @@ export const EducationCard = ({
     education: {
         collegeName,
         dates,
-        degree,
-        gpa
+        degree
     }
 }) => (
     <CardContainer>
@@ -17,10 +16,6 @@ export const EducationCard = ({
         <HR />
         <CardDiv>
             <CardText>{dates}</CardText>
-        </CardDiv>
-        <HR />
-        <CardDiv>
-            <CardText>GPA: {gpa}</CardText>
         </CardDiv>
     </CardContainer>
 )

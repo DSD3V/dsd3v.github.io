@@ -1,9 +1,26 @@
 import { useEffect, useState } from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useLocation } from 'react-router-dom'
+import styled from 'styled-components'
+import { COLORS } from '../constants'
 import { HomeNavbarLink, NavbarDiv, NavbarLink, NavbarLinksDiv, Toggle } from '../styles/NavbarStyles'
 import { TabRouteToIndex, TABS, TabTitleToIndex } from '../tabs'
 
 export const Navbar = ({ isPageNotFound }) => {
+    const StyledAiOutlineMenu = styled(AiOutlineMenu)`
+        color: rgb(${COLORS.GREY_RGB});
+
+        :hover {
+            color: ${COLORS.LIGHT_GREY};
+        }
+    `
+    const StyledAiOutlineClose = styled(AiOutlineClose)`
+        color: rgb(${COLORS.GREY_RGB});
+
+        :hover {
+            color: ${COLORS.LIGHT_GREY};
+        }
+    `
     const currentRoute = `/${useLocation().pathname.split('/')[1].toLowerCase()}`
     const [currentTabIndex, setCurrentTabIndex] = useState(
         TabRouteToIndex[currentRoute]
@@ -34,7 +51,7 @@ export const Navbar = ({ isPageNotFound }) => {
                 {TABS[0].title}
             </HomeNavbarLink>
             <Toggle onClick={toggleMenu}>
-                <span /><span /><span />
+                {!isMenuOpen ? <StyledAiOutlineMenu size={32} /> : <StyledAiOutlineClose size={35} />}
             </Toggle>
             <NavbarLinksDiv $isMenuOpen={isMenuOpen} $numTabs={TABS.length - 1}>
                 {TABS.slice(1).map(({ route, title }, index) => (

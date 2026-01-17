@@ -4,9 +4,9 @@ import { COLORS, NAVBAR_TOGGLE_WIDTH } from '../constants'
 
 export const HomeNavbarLink = styled(Link)`
   border-bottom: ${({ $isCurrentTab }) =>
-        $isCurrentTab
-            ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.6)`
-            : 'black'};
+    $isCurrentTab
+      ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.6)`
+      : 'black'};
   font-size: 1.4rem;
   left: 0;
   margin-left: 1rem;
@@ -36,7 +36,7 @@ export const NavbarLinksDiv = styled.div`
   @media (max-width: ${NAVBAR_TOGGLE_WIDTH}) {
     flex-direction: column;
     max-height: ${({ $isMenuOpen, $numTabs }) =>
-        $isMenuOpen ? `${50 * $numTabs}px` : '0px'};
+    $isMenuOpen ? `${50 * $numTabs}px` : '0px'};
     transition: max-height 0.3s;
     width: 100%;
   }
@@ -44,11 +44,11 @@ export const NavbarLinksDiv = styled.div`
 
 export const NavbarLink = styled(Link)`
   border: ${({ $isCurrentTab }) =>
-        $isCurrentTab
-            ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.7)`
-            : `1px solid rgba(${COLORS.GREY_RGB}, 0.5)`};
+    $isCurrentTab
+      ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.7)`
+      : `1px solid rgba(${COLORS.GREY_RGB}, 0.5)`};
   color: ${({ $isCurrentTab }) =>
-        $isCurrentTab ? `rgb(${COLORS.LIGHT_GREY_RGB})` : `rgb(${COLORS.GREY_RGB})`};
+    $isCurrentTab ? `rgb(${COLORS.LIGHT_GREY_RGB})` : `rgb(${COLORS.GREY_RGB})`};
   font-size: 1rem;
   margin: 1rem 1.5rem;
   padding: 7px 5px;
@@ -58,9 +58,9 @@ export const NavbarLink = styled(Link)`
 
   :hover {
     border: ${({ $isCurrentTab }) =>
-        $isCurrentTab
-            ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.7)`
-            : `1px solid rgba(${COLORS.GREY_RGB}, 0.6)`};
+    $isCurrentTab
+      ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.7)`
+      : `1px solid rgba(${COLORS.GREY_RGB}, 0.6)`};
   }
 
   @media (max-width: 850px) {
@@ -77,18 +77,8 @@ export const Toggle = styled.div`
   display: none;
   margin: 1rem 1rem 1rem 88%;
 
-  span {
-    background-color: rgb(${COLORS.GREY_RGB});
-    height: 2px;
-    margin: 3px;
-    transition: 0.3s;
-    width: 24px;
-  }
-
   :hover {
-    span {
-      background-color: ${COLORS.LIGHT_GREY};
-    }
+    background-color: ${COLORS.LIGHT_GREY};
   }
 
   @media (max-width: ${NAVBAR_TOGGLE_WIDTH}) {
