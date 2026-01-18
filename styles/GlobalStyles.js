@@ -61,7 +61,7 @@ export const CardText = styled.span`
 
 export const CardTitle = styled.span`
   color: ${COLORS.LIGHT_GREY};
-  font-size: 1.4rem;
+  font-size: 1.38rem;
   overflow: hidden;
   padding: 5% 4.5% 2% 4.5%;
 `
