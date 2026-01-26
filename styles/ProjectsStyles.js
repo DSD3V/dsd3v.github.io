@@ -1,12 +1,21 @@
 import styled from 'styled-components'
-import { MOBILE_WIDTH } from '../constants'
-import { TabGrid } from './GlobalStyles'
+import { COLORS } from '../constants'
+import { Link } from './GlobalStyles'
 
-export const ProjectsTabGrid = styled(TabGrid)`
-  grid-auto-rows: minmax(650px, auto);
-  grid-template-columns: repeat(auto-fill, 450px);
+export const GitHubLink = styled(Link)`
+  border: 1px solid rgba(${COLORS.LINK_BLUE_RGB}, 0.5);
+  padding: 25px;
 
-  @media (max-width: ${MOBILE_WIDTH}) {
-    grid-template-columns: repeat(auto-fill, 350px);
+  :hover {
+    border: 1px solid rgba(${COLORS.LIGHT_LINK_BLUE_RGB}, 0.5);
   }
+`
+
+export const ProjectsDiv = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.28rem;
+  justify-content: center;
+  margin-top: 50px;
 `

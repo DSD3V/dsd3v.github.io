@@ -1,16 +1,24 @@
-import educationData from '../data/Education.json'
-import { EducationCard } from './EducationCard'
-import { TabContainer } from '../styles/GlobalStyles'
-import { EducationTabGrid } from '../styles/EducationStyles'
+import educationData from '../data/education.json'
+import { Divider, HR, TabContainer } from '../styles/GlobalStyles'
+import { EducationDiv, EducationUl } from '../styles/EducationStyles'
 import { TabHeader } from './TabHeader'
 
 export const Education = ({ title }) => (
     <TabContainer>
         <TabHeader title={title} />
-        <EducationTabGrid>
-            {educationData.map((education) => (
-                <EducationCard key={education.collegeName} education={education} />
-            ))}
-        </EducationTabGrid>
+        <EducationDiv>
+            <EducationUl>
+                {educationData.map(({ dates, description }, index) => (
+                    <>
+                        <li>
+                            {description}
+                            <Divider>|</Divider>
+                            {dates}
+                        </li>
+                        {index !== educationData.length - 1 && <HR />}
+                    </>
+                ))}
+            </EducationUl>
+        </EducationDiv>
     </TabContainer>
 )

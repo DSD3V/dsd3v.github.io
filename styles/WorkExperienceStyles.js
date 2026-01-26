@@ -1,12 +1,22 @@
 import styled from 'styled-components'
-import { MOBILE_WIDTH } from '../constants'
-import { TabGrid } from './GlobalStyles'
 
-export const WorkExperienceTabGrid = styled(TabGrid)`
-  grid-auto-rows: minmax(210px, auto);
-  grid-template-columns: repeat(auto-fill, 450px);
+export const WorkExperienceDiv = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  justify-content: center;
+  margin-top: 50px;
+`
 
-  @media (max-width: ${MOBILE_WIDTH}) {
-    grid-template-columns: repeat(auto-fill, 350px);
+export const WorkExperienceUl = styled.ul`
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+
+  li {
+    margin: 0 auto;
+    max-width: 85%;
   }
 `

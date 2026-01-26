@@ -11,6 +11,11 @@ export const TABS = [
         title: 'DSD3V'
     },
     {
+        Component: Projects,
+        route: '/projects',
+        title: 'Projects'
+    },
+    {
         Component: WorkExperience,
         route: '/work-experience',
         title: 'Work Experience'
@@ -19,11 +24,6 @@ export const TABS = [
         Component: Education,
         route: '/education',
         title: 'Education'
-    },
-    {
-        Component: Projects,
-        route: '/coding-projects',
-        title: 'Coding Projects'
     },
     {
         Component: Contact,

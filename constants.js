@@ -1,11 +1,9 @@
 export const COLORS = {
-    GREY_RGB: '166,166,166',
-    LIGHT_GREY_RGB: '193,193,193',
+    GREY_RGB: '176,176,176',
+    LIGHT_GREY_RGB: '203,203,203',
     LIGHT_LINK_BLUE_RGB: '224,255,255',
-    LINK_BLUE_RGB: '175,238,238',
-    WHITE: '#FFFFFF',
-    WHITE_RGB: '255,255,255'
+    LINK_BLUE_RGB: '175,238,238'
 }
 
-export const NAVBAR_TOGGLE_WIDTH = '1200px'
+export const NAVBAR_TOGGLE_WIDTH = '1130px'
 export const MOBILE_WIDTH = '525px'

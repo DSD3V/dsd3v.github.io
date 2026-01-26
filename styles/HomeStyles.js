@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { COLORS, MOBILE_WIDTH } from '../constants'
 
 export const H1 = styled.h1`
-  color: ${COLORS.WHITE};
+  color: white;
   font-size: 4rem;
   font-weight: 500;
 
@@ -48,7 +48,7 @@ export const HomeNavigationDiv = styled.div`
 export const StyledLink = styled(Link)`
   align-items: center;
   border: 1px solid rgba(${COLORS.GREY_RGB}, 0.7);
-  color: ${COLORS.GREY};
+  color: rgb(${COLORS.GREY_RGB});
   display: flex;
   flex-direction: column;
   font-size: 1.28rem;
@@ -59,7 +59,7 @@ export const StyledLink = styled(Link)`
   width: 180px;
 
   :hover {
-    color: ${COLORS.LIGHT_GREY};
-    border: 1px solid rgba(${COLORS.GREY_RGB}, 0.8);
+    color: rgb(${COLORS.LIGHT_GREY_RGB});
+    border: 1px solid rgba(${COLORS.GREY_RGB}, 0.9);
   }
 `
