@@ -1,20 +1,16 @@
 import styled from 'styled-components'
-import { Link } from './GlobalStyles'
+import { MOBILE_WIDTH } from '../constants'
 
 export const ContactDiv = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   justify-content: center;
-  margin-top: 50px;
-`
-
-export const LinkedInLink = styled(Link)`
-  margin-top: 12px;
-`
-
-export const TextDiv = styled.div`
-  padding-bottom: 12px;
+  margin: 50px auto 0 auto;
   width: 80%;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    width: 90%;
+  }
 `

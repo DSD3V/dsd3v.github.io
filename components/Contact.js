@@ -1,8 +1,8 @@
 import { BiLinkExternal } from 'react-icons/bi'
 import styled from 'styled-components'
 import contactData from '../data/contact.json'
-import { Divider, TabContainer } from '../styles/GlobalStyles'
-import { ContactDiv, LinkedInLink, TextDiv } from '../styles/ContactStyles'
+import { HR, Link, TabContainer } from '../styles/GlobalStyles'
+import { ContactDiv } from '../styles/ContactStyles'
 import { TabHeader } from './TabHeader'
 
 export const Contact = ({ title }) => {
@@ -15,13 +15,13 @@ export const Contact = ({ title }) => {
         <TabContainer>
             <TabHeader title={title} />
             <ContactDiv>
-                <TextDiv>
+                <div>
                     Email: {contactData.email}
-                    <Divider>|</Divider>
-                    <LinkedInLink href={contactData.linkedInUrl} rel='noopener noreferrer' target='_blank'>
-                        LinkedIn<StyledBiLinkExternal />
-                    </LinkedInLink>
-                </TextDiv>
+                </div>
+                <HR />
+                <Link href={contactData.linkedInUrl} rel='noopener noreferrer' target='_blank'>
+                    LinkedIn<StyledBiLinkExternal />
+                </Link>
             </ContactDiv>
         </TabContainer>
     )

@@ -11,11 +11,7 @@ export const Divider = styled.span`
 export const HR = styled.hr`
   border: 0.9px solid rgba(255,255,255,0.4);
   margin: 17px auto;
-  width: 1000px;
-
-  @media (max-width: ${MOBILE_WIDTH}) {
-    width: 95%;
-  }
+  width: 100%;
 `
 
 export const Link = styled.a`

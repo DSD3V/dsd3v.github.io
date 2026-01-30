@@ -1,22 +1,16 @@
 import styled from 'styled-components'
+import { MOBILE_WIDTH } from '../constants'
 
 export const WorkExperienceDiv = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
+  font-size: 1.12rem;
   justify-content: center;
-  margin-top: 50px;
-`
+  margin: 50px auto 0 auto;
+  width: 80%;
 
-export const WorkExperienceUl = styled.ul`
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  width: 90%;
-
-  li {
-    margin: 0 auto;
-    max-width: 85%;
+  @media (max-width: ${MOBILE_WIDTH}) {
+    width: 90%;
   }
 `

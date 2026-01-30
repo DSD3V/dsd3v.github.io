@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { COLORS } from '../constants'
+import { COLORS, MOBILE_WIDTH } from '../constants'
 import { Link } from './GlobalStyles'
 
 export const GitHubLink = styled(Link)`
@@ -17,5 +17,10 @@ export const ProjectsDiv = styled.div`
   flex-direction: column;
   font-size: 1.15rem;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  width: 80%;
+
+  @media (max-width: ${MOBILE_WIDTH}) {
+    width: 90%;
+  }
 `
