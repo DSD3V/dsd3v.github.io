@@ -51,7 +51,7 @@ export const StyledLink = styled(Link)`
   color: rgb(${COLORS.GREY_RGB});
   display: flex;
   flex-direction: column;
-  font-size: 1.28rem;
+  font-size: 1.2rem;
   margin: 20px;
   padding: 20px 2px;
   text-decoration: none;
